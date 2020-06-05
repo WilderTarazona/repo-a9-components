@@ -19,14 +19,10 @@ export class SignInComponent implements OnInit {
       email: ['admin@galaxy.edu.pe', [Validators.required, Validators.email]],
       password: ['123456', Validators.required] // passwordStrong
     });
-    // this.authForm = new FormGroup({
-    //   email: new FormControl('admin@galaxy.edu.pe', [Validators.required, Validators.email]),
-    //   password: new FormControl('123456', Validators.required)
-    // });
   }
 
   get emailField() {
-   return this.authForm.get('email');
+    return this.authForm.get('email');
   }
 
   get passwordField() {

@@ -13,7 +13,10 @@ export class AppComponent {
     private router: Router
   ) { }
 
-  redirect() {
+  redirectAuth() {
     this.router.navigateByUrl('/auth');
+  }
+  redirectNgxsIntro() {
+    this.router.navigateByUrl('/ngxs-intro');
   }
 }

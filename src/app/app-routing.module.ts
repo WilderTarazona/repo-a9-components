@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'ngxs-intro',
     loadChildren: () => import('./features/ngxs-intro/ngxs-intro.module').then(m => m.NgxsIntroModule)
+  },
+  {
+    path: 'ngxs-crud',
+    loadChildren: () => import('./features/ngxs-crud/ngxs-crud.module').then(m => m.NgxsCrudModule)
   }
 ];
 

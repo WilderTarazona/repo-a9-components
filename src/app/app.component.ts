@@ -19,4 +19,7 @@ export class AppComponent {
   redirectNgxsIntro() {
     this.router.navigateByUrl('/ngxs-intro');
   }
+  redirectNgxsCrud() {
+    this.router.navigateByUrl('/ngxs-crud');
+  }
 }
